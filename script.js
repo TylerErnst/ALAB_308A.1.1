@@ -10,7 +10,7 @@ function stackCounter(){
 
 // Surround the initial function call in a try/catch block.
 try {
-    //stackCounter();
+    stackCounter();
 } catch (error) {
     // Within the catch, log the error and the value of the counter variable.
     console.log(error);
@@ -59,13 +59,13 @@ function addPrimes(n,element){
         }
         num ++;
     }
-    
+    setTimeout(() => {
+        alert("Calculation Done");
+    },5)    
 }
 
 addPrimes(n,textElement)
-// setTimeout(() => {
-//     alert("Calculation Done");
-// },5)
+
 
 
 
